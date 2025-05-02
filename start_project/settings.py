@@ -78,11 +78,6 @@ TEMPLATES = [
 ]
 
 ASGI_APPLICATION = 'start_project.asgi.application'
-# CHANNEL_LAYERS = {
-#     'default': {
-#         'BACKEND': 'channels.layers.InMemoryChannelLayer',
-#     },
-# }
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
@@ -160,7 +155,7 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Inventory API',
+    'TITLE': 'Chat API',
     'DESCRIPTION': '',
     'VERSION': '1.0.0',
     # OTHER SETTINGS

@@ -11,7 +11,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def create(self, validated_data):
-        validated_data.pop('password2')  # Remove password2 as it's not needed for user creation
+        validated_data.pop('password2')  
         user = User.objects.create_user(**validated_data)
         return user
 
