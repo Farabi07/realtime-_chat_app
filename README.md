@@ -10,21 +10,14 @@ This project is a backend-only real-time chat system built with Django,Django Ch
 - Redis
 - JWT (using `djangorestframework-simplejwt`)
 
----
-## ✅ Features
+git clone https://github.com/Farabi07/realtime-_chat_app.git
 
-- User Registration & Login with password encryption
-- JWT-based authentication for HTTP and WebSocket
-- Real-time messaging using WebSockets
-- Messages persist in the database
-- Default global chat room
+## Register API
 
----
 
-## 🚀 Getting Started
+POST /user/signup/
+## Login API
 
-### 1. Clone the Repo
+POST POST /user/login/
 
-```bash
-git clone https://github.com/your-username/realtime-chat-api.git
-cd realtime-chat-api
+ws://127.0.0.1:8000/ws/chat/global/?token= " jwt user token"
